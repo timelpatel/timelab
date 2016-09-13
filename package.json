@@ -1,0 +1,25 @@
+{
+  "name": "timelab",
+  "version": "1.0.0",
+  "description": "Time Lab Digital",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timelpatel/timelab.git"
+  },
+  "author": "Time Lab Digital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timelpatel/timelab/issues"
+  },
+  "homepage": "https://github.com/timelpatel/timelab#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

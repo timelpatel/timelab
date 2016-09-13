@@ -1,0 +1,12 @@
+/*
+    timelab.co.uk
+    Fonts
+*/
+
+@include font-face(helveticaneueultralight, '/assets/font/helvetica-neue-ultra-light/helveticaneueultralight');
+@include font-face(heavydock11, '/assets/font/heavy-dock-11/heavydock11');
+
+/* Variables */
+$font-stack-body: helveticaneue, helvetica, arial;
+$font-stack-light: helveticaneueultralight, 'helveticaneueultralight', $font-stack-body;
+$font-stack-heavy: 'heavydock11', xxxx-ARIAL-BOLD-xxx;

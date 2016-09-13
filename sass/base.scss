@@ -1,0 +1,95 @@
+/*
+    timelpatel.com
+    Base
+*/
+
+/* imports */
+@import '_reset';
+@import '_variables';
+@import '_mixins';
+@import '_grid';
+@import '_fonts';
+
+
+
+/* global */
+body {
+    background: $background-body;
+    color: $font-primary-color;
+    font: 100% $font-stack-body;
+}
+
+
+
+/* font */
+h1, h2, h3 {
+    font-family: $font-stack-light;
+    margin-bottom: 2em;
+}
+h1 {
+    font-size: 2.3em;
+    font-family: $font-stack-heavy;
+}
+h2 {
+    font-size: 2em;
+    font-family: $font-stack-heavy;
+}
+h3 {
+    font-size: 1.35em;
+    margin-bottom: 0;
+}
+p {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+a:link, a:visited {
+    color: $font-primary-link;
+    text-decoration: none;
+}
+a:active, a:hover {
+    color: $font-primary-hover;
+}
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+}
+
+
+
+
+
+/* Smartphones (landscape) ----------- */
+// @media screen and (min-width : 601px) {
+//
+//
+// }
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 600px) {
+
+    /* font */
+    h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+
+}
