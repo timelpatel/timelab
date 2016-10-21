@@ -26,6 +26,8 @@ module.exports = function(grunt) {
 
     });
 
+    grunt.loadNpmTasks('grunt');
+    // grunt.loadNpmTasks('grunt-cli');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 

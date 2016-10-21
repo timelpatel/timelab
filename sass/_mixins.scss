@@ -20,3 +20,12 @@
     }
   }
 }
+
+@mixin circle($width, $height, $color) {
+	width: $width;
+	height: $height;
+	background: $color;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}

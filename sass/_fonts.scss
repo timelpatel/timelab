@@ -4,9 +4,68 @@
 */
 
 @include font-face(helveticaneueultralight, '/assets/font/helvetica-neue-ultra-light/helveticaneueultralight');
-@include font-face(heavydock11, '/assets/font/heavy-dock-11/heavydock11');
+@include font-face(heavydock11, '/assets/font/heavy-dock-11/heavy_dock11');
 
-/* Variables */
+/* variables */
 $font-stack-body: helveticaneue, helvetica, arial;
 $font-stack-light: helveticaneueultralight, 'helveticaneueultralight', $font-stack-body;
-$font-stack-heavy: 'heavydock11', xxxx-ARIAL-BOLD-xxx;
+$font-stack-heavy: 'heavydock11', Arial Bold;
+
+
+
+/* styles */
+h1, h2 {
+    font-family: $font-stack-heavy;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    color: $color-font-heading;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 2.1em;
+    margin-bottom: 1em;
+}
+h3 {
+    font-family: $font-stack-light;
+    font-size: 1.35em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+a:link, a:visited {
+    color: $color-font-link;
+    text-decoration: none;
+}
+a:active, a:hover {
+    color: $color-font-link-hover;
+}
+small {
+    font-size: 0.7em;
+}
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 600px) {
+
+    /* font */
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.15em;
+    }
+
+}
