@@ -32,12 +32,12 @@ hr {
 #clients,
 #contact,
 #services {
+    margin: 0 auto;
+    max-width: 1100px;
     padding: 100px 1em;
 }
 
-
-
-// home hero
+// hero
 #hero {
     background: $color-background-alt;
     height: 500px;
@@ -57,12 +57,24 @@ hr {
     ul {
         text-align: center;
 
-        li span {
-            @include circle(50px, 50px, $color-background-dark);
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 2em;
-            margin-top: 2em;
+        li {
+
+            span {
+                background: url(../img/services.png) no-repeat;
+                background-size: 100%;
+                display: block;
+                height: 80px;
+                margin: 0 auto;
+                width: 80px;
+            }
+
+            &.technical span {
+                background-position: 0 -100px;
+            }
+
+            &.strategy span {
+                background-position: 20px -250px;
+            }
         }
     }
 }
@@ -79,7 +91,7 @@ hr {
             @extend .hide-text;
             background-position-x: center;
             background-repeat: no-repeat;
-            background-size: 60%;
+            background-size: 150px;
             display: block;
             height: 112px;
         }
@@ -102,20 +114,9 @@ hr {
 
 // get in touch
 #contact {
-    background: $color-background-dark;
-    color: $color-white;
-
     p {
         font-size: 1.5em;
         text-align: center;
-
-        a {
-            color: $color-white;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
     }
 }
 
@@ -123,7 +124,9 @@ hr {
 
 // footer
 footer {
-    padding: 100px 20px;
+    background: $color-font-bodycopy;
+    color: $color-white;
+    padding: 20px;
     text-align: center;
 }
 
@@ -132,14 +135,9 @@ footer {
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-    // clients
-    #clients li span {
-        background-size: 50%;
-    }
-
-}
+// @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+//
+// }
 
 
 
@@ -148,10 +146,17 @@ footer {
 /* Smartphones (portrait) ----------- */
 @media screen and (max-width : 600px) {
 
+    //hero
+    #hero {
+        height: 320px;
+    }
+    #hero h2 {
+        font-size: 1.15em;
+    }
+
     // clients
     #clients li span {
         background-position: center;
-        background-size: 30%;
     }
 
     // get in touch

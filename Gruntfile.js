@@ -3,6 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
+
         sass: {
             dist: {
                 options: {
@@ -14,6 +15,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+
         watch: {
             sass: {
                 options: {
@@ -27,7 +29,6 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt');
-    // grunt.loadNpmTasks('grunt-cli');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 

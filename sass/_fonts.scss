@@ -45,6 +45,7 @@ a:link, a:visited {
 }
 a:active, a:hover {
     color: $color-font-link-hover;
+    text-decoration: underline;
 }
 small {
     font-size: 0.7em;
@@ -63,9 +64,6 @@ small {
     /* font */
     h1 {
         font-size: 2em;
-    }
-    h2 {
-        font-size: 1.15em;
     }
 
 }

@@ -6,7 +6,7 @@
 /* backgrounds */
 $color-background-body: #ebebeb;
 $color-background-alt: #efefef;
-$color-background-dark: #666;
+$color-background-dark: #ccc;
 
 /* core */
 $color-primary: #cc3300;
@@ -15,5 +15,5 @@ $color-white: #fff;
 /* fonts */
 $color-font-bodycopy: #3c3c3c;
 $color-font-heading: $color-primary;
-$color-font-link: $color-primary;
-$color-font-link-hover: $color-primary;
+$color-font-link: $color-font-bodycopy;
+$color-font-link-hover: $color-font-bodycopy;
