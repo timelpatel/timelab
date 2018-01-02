@@ -3,65 +3,66 @@
     Grid
 */
 
-/* grid */
+.container {
+    padding: 40px;
+}
+
 .row {
     display: flex;
     flex-flow: row wrap;
-    /*margin: 0 -10px;
-    margin-bottom: 10px;*/
 }
+
 .col {
-    float: left;
-    // -webkit-box-sizing: border-box;
-    // -moz-box-sizing: border-box;
-    // box-sizing: border-box;
-}
-.wrapper {
-    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
-
-/* Smartphones (portrait and landscape) ----------- */
-/*@media screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-
-}*/
-
-
-
-/* Smartphones (landscape) ----------- */
-@media screen and (min-width : 601px) {
-
-    /* grid */
-    .col-2-3 {
-        width: 66.66%;
-    }
-    .col-1-2 {
-        width: 50%;
-    }
-    .col-1-3 {
-        margin: 0 2%;
-        width: 29.33%;
-    }
-    .col-1-4 {
-        width: 25%;
-    }
-    .col-1-8 {
-        width: 12.5%;
-    }
-
+// 12 col grid system
+.col1 {
+    width: 8.333%;
+}
+.col2 {
+    width: 16.665%;
+}
+.col3 {
+    width: 25%;
+}
+.col4 {
+    width: 33.333%;
+}
+.col5 {
+    width: 41.665%;
+}
+.col6 {
+    width: 50%;
+}
+.col7 {
+    width: 58.333%;
+}
+.col8 {
+    width: 66.665%;
+}
+.col9 {
+    width: 75%;
+}
+.col10 {
+    width: 83.333%;
+}
+.col11 {
+    width: 91.665%;
+}
+.col12 {
+    width: 100%;
 }
 
 
 
-/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
 @media screen and (max-width : 600px) {
 
-    .col {
-        float: none;
-        margin-bottom: 3em;
+    .col4 {
+        width: 100%;
     }
 
 }

@@ -17,6 +17,7 @@ body {
     background: $color-background-body;
     color: $color-font-bodycopy;
     font: 100% $font-stack-body;
+    min-width: 375px;
 }
 
 hr {
@@ -30,10 +31,8 @@ hr {
 
 
 #clients,
-#contact,
 #services {
     margin: 0 auto;
-    max-width: 1100px;
     padding: 100px 1em;
 }
 
@@ -54,28 +53,28 @@ hr {
 
 // services
 #services {
-    ul {
-        text-align: center;
+    text-align: center;
 
-        li {
+    span {
+        background: url(../img/services.png) no-repeat;
+        background-size: 100%;
+        display: block;
+        height: 80px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 80px;
+    }
 
-            span {
-                background: url(../img/services.png) no-repeat;
-                background-size: 100%;
-                display: block;
-                height: 80px;
-                margin: 0 auto;
-                width: 80px;
-            }
+    .technical span {
+        background-position: 0 -100px;
+    }
 
-            &.technical span {
-                background-position: 0 -100px;
-            }
+    .strategy span {
+        background-position: 20px -250px;
+    }
 
-            &.strategy span {
-                background-position: 20px -250px;
-            }
-        }
+    p {
+        margin: 0 20px;
     }
 }
 
@@ -86,37 +85,17 @@ hr {
     background: $color-background-alt;
     padding-bottom: 200px;
 
-    li {
-        span {
-            @extend .hide-text;
-            background-position-x: center;
-            background-repeat: no-repeat;
-            background-size: 150px;
-            display: block;
-            height: 112px;
-        }
-
-        &.lbg span {
-            background-image: url(../img/client-lbg.png);
-        }
-
-        &.bbc span {
-            background-image: url(../img/client-bbc.png);
-        }
-
-        &.bar span {
-            background-image: url(../img/client-bar.png);
-        }
-    }
-}
-
-
-
-// get in touch
-#contact {
-    p {
-        font-size: 1.5em;
+    .col {
+        margin: 50px 0;
+        position: relative;
         text-align: center;
+
+        img {
+            bottom: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
@@ -126,25 +105,18 @@ hr {
 footer {
     background: $color-font-bodycopy;
     color: $color-white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
 
 
-
-
-/* Smartphones (portrait and landscape) ----------- */
-// @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-//
-// }
-
-
-
-
-
 /* Smartphones (portrait) ----------- */
 @media screen and (max-width : 600px) {
+
+    .col {
+        margin-bottom: 20px;
+    }
 
     //hero
     #hero {
@@ -152,18 +124,6 @@ footer {
     }
     #hero h2 {
         font-size: 1.15em;
-    }
-
-    // clients
-    #clients li span {
-        background-position: center;
-    }
-
-    // get in touch
-    #contact {
-        p {
-            font-size: 1em;
-        }
     }
 
 }
